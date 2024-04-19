@@ -545,6 +545,27 @@
 							        });
     }
 }
+									else if (position == 8) {
+									    if (cycle == 0) {
+									        $("#position_8_cycle_0").show();
+									        $(".position_8_cycle_0_button").one("click", function() {
+									            $(".position_8_cycle_0_button").off("click");
+									            let user_input = $(this).val();
+									            if (user_input === "雨傘") {
+									                score -= 20;
+									                alert(`購買了雨傘，score = ${score}`);
+									            } else if (user_input === "食物") {
+									                score += 20;
+									                alert(`購買了食物，score = ${score}`);
+									            } else if (user_input === "架上的學生證") {
+									                score -= 10;
+									                alert(`購買了架上的學生證，怎麼有在賣學生證??，score = ${score}`);
+									            }
+									            resolve(currentRound + 1);
+									        });
+									    }
+									}
+
 
 								});
 							}
