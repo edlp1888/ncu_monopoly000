@@ -198,25 +198,150 @@
 			    <input class="position_7_cycle_0_button" type="button" value="不要，這個太貴了">
 			</div>
 
-			<!-- EDIT (position_0_cycle_0 代表第一次走到第九格時要顯示的關卡) -->
-			<!-- EDIT (style 可以自己調整，但 display: none 一定要寫，剛開始所有關卡都是隱藏的，走到對應格子時再顯示關卡) -->
-			<div class="stage" id="position_0_cycle_0" style="display: none;">
-				<!-- EDIT (把這一關需要的元件都寫在這裡) -->
-				<!-- EDIT (其中選項按鈕要屬於同一個 class) -->
-				<p></p>
-				<input class="position_0_cycle_0_button" type="button" value="">
-				<input class="position_0_cycle_0_button" type="button" value="">
-				<input class="position_0_cycle_0_button" type="button" value="">
+				<!-- 9.松苑餐廳 -->
+				<!-- 小松鼠: -->
+				<p>這裡就是松苑餐廳！裡面有許多店家要去哪裡看看呢？</p>
+				
+				<!-- EDIT (position_8_cycle_0 代表第一次走到第九格時要顯示的關卡) -->
+				<div class="stage" id="position_8_cycle_0" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+				    <p>請選擇地方：</p>
+				    <input class="position_8_cycle_0_button" type="button" value="a. 露易莎">
+				    <input class="position_8_cycle_0_button" type="button" value="b. 漢堡王">
+				    <input class="position_8_cycle_0_button" type="button" value="c. 全家">
 				</div>
-			<!-- EDIT (position_0_cycle_0 代表第一次走到第十格時要顯示的關卡) -->
+				
+				<!-- EDIT (position_8_cycle_1 代表第二次走到第九格時要顯示的關卡) -->
+				<div class="stage" id="position_8_cycle_1" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+				    <p>小松鼠："哇，全家裡賣的東西玲瑯滿目耶，甚至還有85折！"</p>
+				    <p>請選擇買什麼：</p>
+				    <input class="position_8_cycle_1_button" type="button" value="雨傘">
+				    <input class="position_8_cycle_1_button" type="button" value="食物">
+				    <input class="position_8_cycle_1_button" type="button" value="架上的學生證">
+				</div>
+
+				<!-- 10.宿舍區 -->
+				<!-- 小松鼠: -->
+				<p>這附近接近宿舍區喔。有男3、6、7、13還有女1-4、14。通常新生會入住男9、13以及女1-4喔。去看看你的寢室吧。</p>
+				
+				<!-- EDIT (position_9_cycle_0 代表第一次走到第十格時要顯示的關卡) -->
+				<div class="stage" id="position_9_cycle_0" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+				    <p>走進你的宿舍，突然有一個人迎面向你跑來：</p>
+				    <p>「不好意思，請問你有看到我的學生證嗎？」</p>
+				    <input class="position_9_cycle_0_button" type="button" value="有">
+				    <input class="position_9_cycle_0_button" type="button" value="沒有">
+				</div>
+			<!-- 11.宵夜街 -->
+			<!-- 小松鼠: -->
+			<p>這裡就是宵夜街喔！從入口進來後便有許多的店家，而且他們通常都會營業到很晚，所以是想吃宵夜的人的好去處喔！</p>
+			
+			<!-- EDIT (position_10_cycle_0 代表第一次踩到第十一格時要顯示的關卡) -->
+			<div class="stage" id="position_10_cycle_0" style="display: none;">
+			    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+			    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+			    <p>第一次踩到：</p>
+			    <input class="position_10_cycle_0_button" type="button" value="吃個宵夜">
+			</div>
+			
+			<!-- EDIT (position_10_cycle_1 代表第二次踩到第十一格時要顯示的關卡) -->
+			<div class="stage" id="position_10_cycle_1" style="display: none;">
+			    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+			    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+			    <p>第二次踩到：</p>
+			    <input class="position_10_cycle_1_button" type="button" value="真的好飽">
+			</div>
+			//十二格是隨機
+				<div class="stage" id="position_12_cycle_0" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <p>聖經研究社邀請您一同聆聽福音?</p>
+				    <input class="position_12_cycle_0_button" type="button" value="答應">
+				    <input class="position_12_cycle_0_button" type="button" value="因社恐不敢走掉">
+				    <input class="position_12_cycle_0_button" type="button" value="掉頭就走">
+				</div>
+
+
+				<!-- EDIT (position_12_cycle_1 代表第二次踩到第十三格時要顯示的關卡) -->
+				<div class="stage" id="position_12_cycle_1" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <p>晚餐時刻火舞社正在志道樓廣場前表演，你會?</p>
+				    <input class="position_12_cycle_1_button" type="button" value="吃飯皇帝大">
+				    <input class="position_12_cycle_1_button" type="button" value="好看一直看">
+				</div>
+				
+				<!-- EDIT (position_12_cycle_2 代表第三次踩到第十三格時要顯示的關卡) -->
+				<div class="stage" id="position_12_cycle_2" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <p>期末時，許多的社團活動和課業使你身心俱疲，你會?</p>
+				    <input class="position_12_cycle_2_button" type="button" value="專心於課業">
+				    <input class="position_12_cycle_2_button" type="button" value="期末是甚麼？能吃嗎？">
+				</div>
+				
+				<!-- EDIT (position_12_cycle_3 代表第四次踩到第十三格時要顯示的關卡) -->
+				<div class="stage" id="position_12_cycle_3" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <p>易有太極、是生兩儀。兩儀生四象、四象生八卦。說到太極，你會想到?</p>
+				    <input class="position_12_cycle_3_button" type="button" value="太極飯糰">
+				    <input class="position_12_cycle_3_button" type="button" value="太極社">
+				    <input class="position_12_cycle_3_button" type="button" value="八卦">
+				</div>
+				
+				<!-- EDIT (position_12_cycle_4 代表第五次踩到第十三格時要顯示的關卡) -->
+				<div class="stage" id="position_12_cycle_4" style="display: none;">
+				    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+				    <p>室友參加社團活動結束後竟下起了大雨，當他匆匆忙忙地趕回到了宿舍，你會?</p>
+				    <input class="position_12_cycle_4_button" type="button" value="選擇無視">
+				    <input class="position_12_cycle_4_button" type="button" value="請他多喝熱水">
+				    <input class="position_12_cycle_4_button" type="button" value="拿毛巾幫他擦拭濕潤的頭髮">
+				</div>
+
+			<!-- 第一次踩到 -->
+			<div class="stage" id="position_13_cycle_0" style="display: none;">
+			    <p>這棟紅磚建築就是中央大學的「校史館」喔！裏頭蒐藏著許多我們學校的故事。既然都入學了，就要做一位稱職的中大生。</p>
+			    <p>請問我們學校的「校訓」是？</p>
+			    <input class="position_13_cycle_0_button" type="button" value="誠實">
+			    <input class="position_13_cycle_0_button" type="button" value="誠樸">
+			    <input class="position_13_cycle_0_button" type="button" value="誠信">
+			    <input class="position_13_cycle_0_button" type="button" value="誠心">
+			</div>
+			
+			<!-- 第二次踩到 -->
+			<div class="stage" id="position_13_cycle_1" style="display: none;">
+			    <p>又經過校史館了，相信透過這段時間的探索你對學校一定有了更深入的了解。接下來這題就有點難度囉！</p>
+			    <p>中央大學原先於大陸辦校，後隨國民政府遷台後復校。請問今年(2024)為中大在台復校的第幾年？</p>
+			    <input class="position_13_cycle_1_button" type="button" value="60">
+			    <input class="position_13_cycle_1_button" type="button" value="61">
+			    <input class="position_13_cycle_1_button" type="button" value="62">
+			    <input class="position_13_cycle_1_button" type="button" value="63">
+			</div>
+
+			<!-- EDIT (position_14_cycle_0 代表第一次走到第十五格時要顯示的關卡) -->
 			<!-- EDIT (style 可以自己調整，但 display: none 一定要寫，剛開始所有關卡都是隱藏的，走到對應格子時再顯示關卡) -->
-			<div class="stage" id="position_0_cycle_0" style="display: none;">
-				<!-- EDIT (把這一關需要的元件都寫在這裡) -->
-				<!-- EDIT (其中選項按鈕要屬於同一個 class) -->
-				<p></p>
-				<input class="position_0_cycle_0_button" type="button" value="">
-				<input class="position_0_cycle_0_button" type="button" value="">
-				<input class="position_0_cycle_0_button" type="button" value="">
+			<div class="stage" id="position_14_cycle_0" style="display: none;">
+			    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+			    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+			    <p>看看你的旁邊～這是「太極銅雕」喔。說出來怕嚇到你，這可是雕塑大師朱銘的作品。</p>
+			    <p>形似二人對招，雙手相纏，如太極之圓融，渾然一體，是富涵中華傳統文化的精美藝術喔。</p>
+			    <p>請問朱銘是下列何者？</p>
+			    <input class="position_14_cycle_0_button" type="button" value="a 照片">
+			    <input class="position_14_cycle_0_button" type="button" value="b 雕塑家">
+			</div>
+
+			<!-- EDIT (position_15_cycle_0 代表第一次走到第十六格時要顯示的關卡) -->
+			<!-- EDIT (style 可以自己調整，但 display: none 一定要寫，剛開始所有關卡都是隱藏的，走到對應格子時再顯示關卡) -->
+			<div class="stage" id="position_15_cycle_0" style="display: none;">
+			    <!-- EDIT (把這一關需要的元件都寫在這裡) -->
+			    <!-- EDIT (其中選項按鈕要屬於同一個 class) -->
+			    <p>恭喜你將中大的校園走完了。這裡的風景好美喔～拍一張照片再回去吧。</p>
+			    <input class="position_15_cycle_0_button" type="file">
+			</div>
+			
+			
+
 			<!-- EDIT (剩下的關卡可以如法炮製) -->
 		</div>
 	</body>
