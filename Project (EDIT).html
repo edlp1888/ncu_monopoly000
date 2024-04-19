@@ -352,22 +352,35 @@
 						}
 						// EDIT (以此類推)
 					}
-						   else if (position == 4)//機會格 暫時不動
+						   else if (position == 5)//步數
 						{
 							if (cycle == 0)
 							{
 								// EDIT (把關卡的元件顯示出來)
-								$("#position_4_cycle_0").show();
+								$("#position_5_cycle_0").show();
 								// EDIT (偵測關卡的選項有被有被點擊)
-								$(".position_4_cycle_0_button").one("click", function() {
+								$(".position_5_cycle_0_button").one("click", function() {
 									// EDIT (點擊選項後檢查是哪一個選項被點，並檢查點擊的選項是否為正確答案來更新分數)
-									$(".position_4_cycle_0_button").off("click");
+									$(".position_5_cycle_0_button").off("click");
 									let user_input = $(this).val();
-									if (user_input == "乖乖分類")
+									if (user_input == "看地板是否真的跟月球表面一樣")
+									{	score -= 10;
+									 	alert(`走路踩到坑洞跌倒，然後上課遲到，下次行動步數-1, score = ${score}`);
+									}
+									else if (user_input == "沒有要看地板，我對棒球隊有沒有帥哥比較有興趣")
+									{
+										score += 20;
+										alert(`看到學長打出一個全壘打，直接被帥到，score = ${score}`);
+									}
+									else if (user_input == "趕課要緊 我才不看棒球勒")
+									{		
 										score += 10;
-									else
-										score -= 10;
-									alert(`score = ${score}`);
+										alert(`你快步走過,很幸運沒有跌倒,下次行動步數+1，score = ${score}`);
+									}
+									else if (user_input == "人行道坑坑巴巴的，我要專心走路")
+									{score += 25;
+									alert(`很棒 你還記得中央的人行道很破，一不注意就會跌倒，score = ${score}`);
+									}
 									resolve(currentRound + 1);
 								});
 							}
