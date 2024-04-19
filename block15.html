@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>15.太極銅雕</title>
+<script>
+function checkPhotoAnswer() {
+    var photos = document.getElementsByName('photo');
+    var correctAnswer = "photo1"; // 假設 photo1 是正確答案的值
+    for (var i = 0; i < photos.length; i++) {
+        if (photos[i].checked) {
+            if (photos[i].value === correctAnswer) {
+                alert("恭喜！答對了！");
+            } else {
+                alert("抱歉，答錯了。正確答案是照片一。");
+            }
+            break;
+        }
+    }
+    return false; // 防止表單提交
+}
+</script>
+</head>
+<body>
+  <h1>15_太極銅雕</h1>
+  <img src="img/15_太極銅雕.png" alt="太極銅雕" style="width:100%; max-width:600px;">
+  <form onsubmit="return checkPhotoAnswer();">
+    <p>小松鼠：看看你的旁邊～這是「太極銅雕」喔。説出來怕嚇到你，這可是雕塑大師朱銘的作品。</p>
+    <p>形似二人對招，雙手相纏，如太極之圓融，渾然一體，是富涵中華傳統文化的精美藝術喔。</p>
+    <p>請問朱銘是下列何者？</p>
+    <input type="radio" name="photo" value="photo1" id="photo1"><label for="photo1"><img src="path_to_photo1.jpg" alt="照片一" style="width:100px;"></label><br>
+    <input type="radio" name="photo" value="photo2" id="photo2"><label for="photo2"><img src="path_to_photo2.jpg" alt="照片二" style="width:100px;"></label><br>
+    <input type="radio" name="photo" value="photo3" id="photo3"><label for="photo3"><img src="path_to_photo3.jpg" alt="照片三" style="width:100px;"></label><br>
+    <input type="radio" name="photo" value="photo4" id="photo4"><label for="photo4"><img src="path_to_photo4.jpg" alt="照片四" style="width:100px;"></label><br>
+    <button type="submit">提交答案</button>
+  </form>
+</body>
+</html>

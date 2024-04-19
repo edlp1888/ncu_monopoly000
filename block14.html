@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>14.校史館</title>
+<script>
+function checkAnswer() {
+    var answers = document.getElementsByName('motto');
+    var selectedAnswer = "";
+    for (var i = 0; i < answers.length; i++) {
+        if (answers[i].checked) {
+            selectedAnswer = answers[i].value;
+            break;
+        }
+    }
+
+    if (selectedAnswer === "誠樸") {
+        alert("恭喜！答對了！");
+    } else {
+        alert("抱歉，答錯了。正確答案是「誠樸」。");
+    }
+
+    // 阻止表單提交後的頁面重載
+    return false;
+}
+</script>
+</head>
+<body>
+  <h1>14_校史館</h1>
+  <img src="img/14_校史館.png" alt="校史館" style="width:100%; max-width:600px;">
+  <form onsubmit="return checkAnswer();">
+    <p>小松鼠：這棟紅磚建築就是中央大學的「校史館」喔！裡頭藏著許多我們學校的故事。既然都入學了，就要做一位稱職的中大生。</p>
+    <p>請問我們學校的「校訓」是？</p>
+    <input type="radio" name="motto" value="誠實"><label>誠實</label><br>
+    <input type="radio" name="motto" value="誠樸"><label>誠樸</label><br>
+    <input type="radio" name="motto" value="誠信"><label>誠信</label><br>
+    <input type="radio" name="motto" value="誠心"><label>誠心</label><br>
+    <button type="submit">提交答案</button>
+  </form>
+</body>
+</html>
+
