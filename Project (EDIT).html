@@ -521,6 +521,31 @@
 									alert(`很棒 你還記得中央的人行道很破，一不注意就會跌倒，score = ${score}`);
 									}
 									resolve(currentRound + 1);
+
+							else if (position == 6) {
+							    if (cycle == 0) {
+							        $("#position_6_cycle_0").show();
+							        $(".position_6_cycle_0_button").one("click", function() {
+							            $(".position_6_cycle_0_button").off("click");
+							            let user_input = $(this).val();
+							            if (user_input === "否") {
+							                score -= 10;
+							                alert(`走過時你突然感覺背後涼涼的，score = ${score}`);
+							            } else if (user_input === "是") {
+							                score += 10;
+							                alert(`你膽大的在站牌附近逛，發現什麼鬼都沒有，score = ${score}`);
+							            } else if (user_input === "我只是想去裡面健身而已") {
+							                score += 25;
+							                alert(`是個會運動的好孩子呢，score = ${score}`);
+							            } else if (user_input === "我只是想去裡面游泳而已") {
+							                score -= 20;
+							                alert(`ㄟ那個，裡面沒有游泳館耶，裡面只有籃球館、排球館、體適能健身教室、韻律教室、技擊教室，score = ${score}`);
+							            }
+							            resolve(currentRound + 1);
+							        });
+    }
+}
+
 								});
 							}
 					else
